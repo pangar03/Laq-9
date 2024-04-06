@@ -20,10 +20,14 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    overflow-y: auto;
+    overflow-y: scroll;
+    scrollbar-color: #666 #f7f7f7;
+    scrollbar-width: thin;
+    
 }
 
 .chat-box__message {
+    display: flex;
     color: white;
     padding: 0.5rem 0.8rem;
     max-width: 500px;
