@@ -20,8 +20,8 @@
     border: 1px solid #6b6b6b;
     border-radius: 20px;
     display: flex;
-    flex-direction: column-reverse;
-    justify-content: flex-start;
+    flex-direction: column-reverse; /* Reverse the order of the messages */
+    justify-content: flex-start; 
     overflow-y: scroll;
     scrollbar-color: #666 #f7f7f7;
     scrollbar-width: thin;
