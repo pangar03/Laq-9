@@ -10,21 +10,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 540px;
 }
 
 .chat__chat-box {
+    padding: 0.5rem;
     width: 97vw;
-    height: 75vh;
+    height: 500px;
     border: 1px solid #6b6b6b;
     border-radius: 20px;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
     overflow-y: scroll;
     scrollbar-color: #666 #f7f7f7;
     scrollbar-width: thin;
-    
 }
+
 
 .chat-box__message {
     display: flex;
