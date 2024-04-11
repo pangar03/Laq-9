@@ -6,25 +6,45 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.chat {
+body {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 540px;
+    flex-direction: column;
+    max-height: 100vh;
 }
 
-.chat__chat-box {
-    padding: 0.5rem;
-    width: 97vw;
-    height: 500px;
+/* ===== Scrollbar CSS ===== */
+*::-webkit-scrollbar {
+    width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+    display: none;
+}  
+
+*::-webkit-scrollbar-thumb {
+    background-color: #283139;
+    border-radius: 20px;
+    border: 1px solid #acacac;
+}
+/* ========================= */
+
+.chat {
+    flex: 1 1;
+    overflow-y: auto;
+    height: 540px;
+    width: 95vw;
+    margin: auto;
     border: 1px solid #6b6b6b;
     border-radius: 20px;
+    padding: 1rem;
+}
+
+.chat__chat-box {  
+    width: 100%;
+    min-height: 100%;
     display: flex;
-    flex-direction: column-reverse; /* Reverse the order of the messages */
-    justify-content: flex-start; 
-    overflow-y: scroll;
-    scrollbar-color: #666 #f7f7f7;
-    scrollbar-width: thin;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 
