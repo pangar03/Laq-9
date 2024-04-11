@@ -22,7 +22,7 @@ body {
 }  
 
 *::-webkit-scrollbar-thumb {
-    background-color: #283139;
+    background-color: #283139;  
     border-radius: 20px;
     border: 1px solid #acacac;
 }
@@ -31,7 +31,6 @@ body {
 .chat {
     flex: 1 1;
     overflow-y: auto;
-    height: 540px;
     width: 95vw;
     margin: auto;
     border: 1px solid #6b6b6b;
@@ -41,7 +40,7 @@ body {
 
 .chat__chat-box {  
     width: 100%;
-    min-height: 100%;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
